@@ -14,7 +14,7 @@ const webpack = require('webpack');
 const webpackConfig = require('./webpack.config');
 
 
-const path = {
+const paths = {
     root: './dist',
     styles: {
         src: 'src/scss/**/*.scss',
@@ -46,18 +46,18 @@ function styles() {
         .pipe(csso())
         .pipe(sourcemap.write())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest(path.styles.dest))
+        .pipe(gulp.dest(paths.styles.dest))
 }
 
 //pug
 function templates() {
     return gulp.src('./src/pug/pages/*.pug')
     .pipe(pug({pretty: true}))
-    .pipe(gulp.dest(path.root));
+    .pipe(gulp.dest(paths.root));
 }
 
 function clear() {
-    return del(path.root);
+    return del(paths.root);
 }
 
 function images() {
@@ -66,27 +66,27 @@ function images() {
         progressive: true,
         optimizationLevel: 5
     }))
-    .pipe(gulp.dest(path.images.dest));
+    .pipe(gulp.dest(paths.images.dest));
 }
 
 function server() {
     browserSync.init({
         server: paths.root
     });
-    browserSync.watch(paths.root + '/**/*.*, browserSync.reload'); 
+    browserSync.watch(paths.root + '/**/*.*', browserSync.reload); 
 }
 
 function scripts() {
     return gulp.src('./src/js/main.js')
     .pipe(gulpWebpack(webpackConfig, webpack))
-    .pipe(gulp.dest(path.scripts.dest));
+    .pipe(gulp.dest(paths.scripts.dest));
 }
 
 function watch() {
-    gulp.watch(paths.scss.src, styles);
-    gulp.watch(paths.pug.src, templates);
+    gulp.watch(paths.styles.src, styles);
+    gulp.watch(paths.templates.src, templates);
     gulp.watch(paths.images.src, images);
-    gulp.watch(paths.js.src, scripts);
+    gulp.watch(paths.scripts.src, scripts);
 }
 
 
@@ -94,7 +94,7 @@ exports.styles = styles;
 exports.templates = templates;
 exports.images = images;
 exports.clear = clear;
-exports.scripts = scripts;
+
 
 gulp.task('default', gulp.series(
     clear,
