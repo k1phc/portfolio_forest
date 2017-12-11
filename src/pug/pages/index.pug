@@ -7,20 +7,24 @@ block variables
 block content    
       .wrapper
         .welcome-bg
-        button.auth-button
+        .welcome-auth
+           button('type'= 'button').auth-button Авторизоваться
         .welcome-block
-            .welcome-block__img
-            .welcome-block__name
-            .welcome-block__desc
-            .socials
-                ul.socials__list
-                    li.socials__item
-                    li.socials__item
-                    li.socials__item
-            .welcome-block__menu
-                ul.welcome-menu
-                    li.welcome-menu__item
-                    li.welcome-menu__item
-                    li.welcome-menu__item
+          .user
+            .user__img
+               img(src="", alt="")
+            .user__desc
+               .user__desc-name
+               .user__desc-data
+          .socials
+            ul.socials__list
+                li.socials__item
+                li.socials__item
+                li.socials__item
+          .welcome__menu
+            ul.welcome__list
+                li.welcome__item
+                li.welcome__item
+                li.welcome__item
         .welcome-footer
         

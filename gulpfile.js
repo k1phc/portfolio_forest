@@ -6,6 +6,7 @@ const del = require('del');
 const imagemin = require('gulp-imagemin');
 const sourcemap = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
+const pixrem = require('pixrem');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 
@@ -48,6 +49,7 @@ function styles() {
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest(paths.styles.dest))
 }
+
 
 //pug
 function templates() {
@@ -94,6 +96,7 @@ exports.styles = styles;
 exports.templates = templates;
 exports.images = images;
 exports.clear = clear;
+
 
 
 gulp.task('default', gulp.series(

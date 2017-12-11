@@ -7,17 +7,23 @@
     <meta content="" name="keywords">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="ie=edge" http-equiv="x-ua-compatible">
-    <link rel="stylesheet" href="/assets/styles/app.min.css">
-    <script src="/assets/scripts/bundle.js" defer></script>
+    <link rel="stylwsheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
     <div class="wrapper">
       <div class="welcome-bg"></div>
-      <button class="auth-button"></button>
+      <div class="welcome-auth">
+        <button class="auth-button" type="button">Авторизоваться</button>
+      </div>
       <div class="welcome-block">
-        <div class="welcome-block__img"></div>
-        <div class="welcome-block__name"></div>
-        <div class="welcome-block__desc"></div>
+        <div class="user">
+          <div class="user__img"><img src="" alt=""></div>
+          <div class="user__desc">
+            <div class="user__desc-name"></div>
+            <div class="user__desc-data"></div>
+          </div>
+        </div>
         <div class="socials">
           <ul class="socials__list">
             <li class="socials__item"></li>
@@ -25,15 +31,16 @@
             <li class="socials__item"></li>
           </ul>
         </div>
-        <div class="welcome-block__menu">
-          <ul class="welcome-menu">
-            <li class="welcome-menu__item"></li>
-            <li class="welcome-menu__item"></li>
-            <li class="welcome-menu__item"></li>
+        <div class="welcome__menu">
+          <ul class="welcome__list">
+            <li class="welcome__item"></li>
+            <li class="welcome__item"></li>
+            <li class="welcome__item"></li>
           </ul>
         </div>
       </div>
       <div class="welcome-footer"></div>
     </div>
+    <script src="js/bundle.js" defer></script>
   </body>
 </html>
