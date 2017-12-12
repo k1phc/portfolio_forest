@@ -13,6 +13,6 @@ block content
         .welcome-block
           include ../common/_user
           include ../common/_socials
-          +nav('welcome-nav', ["Мои работы", "Обо мне", "Блог"])     
+          +nav('welcome-nav', [{href: 'works.html', text: 'Мои работы'}, {href: 'about.html', text: 'Обо мне'}, {href: 'blog.html', text:'Блог'}])     
         include ../common/_footer
         
