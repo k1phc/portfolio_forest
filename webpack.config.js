@@ -9,11 +9,11 @@ const PATHS = {
 
 const config = {
   entry: {
-    main: './src/js/main'
+    main: './src/js/main',
   },
   
   output: {
-    filename: './dist/js/bundle.js',
+    filename: './bundle.js',
 },
   plugins: [
     new UglifyJSPlugin({

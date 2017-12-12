@@ -9,4 +9,14 @@ html,body{
     min-height: 100%;
     position: relative;
     overflow: hidden;
+    color: #fff;
+    font-size: rem(16px);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
 }

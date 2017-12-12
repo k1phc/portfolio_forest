@@ -11,35 +11,34 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <div class="wrapper">
-      <div class="welcome-bg"></div>
+    <div class="wrapper"></div>
+    <div class="welcome-bg">
       <div class="welcome-auth">
         <button class="auth-button" type="button">Авторизоваться</button>
       </div>
       <div class="welcome-block">
         <div class="user">
-          <div class="user__img"><img src="" alt=""></div>
+          <div class="user__img"><img class="user__img-pic" src="./images/me.jpg" alt=""></div>
           <div class="user__desc">
-            <div class="user__desc-name"></div>
-            <div class="user__desc-data"></div>
+            <div class="user__desc-name">Кирилл Синюшкин</div>
+            <div class="user__desc-data">Личный сайт веб разработчика     </div>
           </div>
         </div>
         <div class="socials">
           <ul class="socials__list">
-            <li class="socials__item"></li>
-            <li class="socials__item"></li>
-            <li class="socials__item"></li>
+            <li class="socials__item"><a class="socials__link socials__link--vk" href="#"></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--github" href="#"></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--linkedin" href="#"></a></li>
           </ul>
         </div>
-        <div class="welcome__menu">
-          <ul class="welcome__list">
-            <li class="welcome__item"></li>
-            <li class="welcome__item"></li>
-            <li class="welcome__item"></li>
+        <nav class="welcome-nav">
+          <ul class="welcome-nav__list">
+            <li class="welcome-nav__item"><a class="welcome-nav__link" href="#">Мои работы</a></li>
+            <li class="welcome-nav__item"><a class="welcome-nav__link" href="#">Обо мне</a></li>
+            <li class="welcome-nav__item"><a class="welcome-nav__link" href="#">Блог</a></li>
           </ul>
-        </div>
+        </nav>
       </div>
-      <div class="welcome-footer"></div>
     </div>
     <script src="js/bundle.js" defer></script>
   </body>

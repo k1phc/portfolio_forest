@@ -1,4 +1,5 @@
 extends ../template
+include ../common/_mixins
 
 block variables
        - var title = "Добро пожаловать"
@@ -6,25 +7,12 @@ block variables
 
 block content    
       .wrapper
-        .welcome-bg
+      .welcome-bg
         .welcome-auth
            button('type'= 'button').auth-button Авторизоваться
         .welcome-block
-          .user
-            .user__img
-               img(src="", alt="")
-            .user__desc
-               .user__desc-name
-               .user__desc-data
-          .socials
-            ul.socials__list
-                li.socials__item
-                li.socials__item
-                li.socials__item
-          .welcome__menu
-            ul.welcome__list
-                li.welcome__item
-                li.welcome__item
-                li.welcome__item
-        .welcome-footer
+          include ../common/_user
+          include ../common/_socials
+          +nav('welcome-nav', ["Мои работы", "Обо мне", "Блог"])     
+        include ../common/_footer
         

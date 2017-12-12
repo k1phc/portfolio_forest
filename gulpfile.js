@@ -6,7 +6,6 @@ const del = require('del');
 const imagemin = require('gulp-imagemin');
 const sourcemap = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
-const pixrem = require('pixrem');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
 
@@ -66,7 +65,7 @@ function images() {
     return gulp.src('./src/images/**/*.{jpg,png}')
     .pipe(imagemin({
         progressive: true,
-        optimizationLevel: 5
+        optimizationLevel: 3,
     }))
     .pipe(gulp.dest(paths.images.dest));
 }

@@ -1,11 +1,15 @@
 .wrapper{
     min-width: 100%;
     height: 100%;
+    position: relative;
 }
 .welcome-bg{
     background: url(../../images/water.jpg);
     background-size: cover;
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .welcome-auth{
@@ -15,8 +19,78 @@
 }
 
 .welcome-block{
-    width: rem(382px);
-    height: rem(398px);
+    min-height: rem(398px);
     background-color: rgba(18, 38, 32, 0.6);
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: rem(4px);
 }
+
+.user{
+    width: 100%;
+    min-height: rem(217px);
+
+    &__img{
+        width: rem(145px);
+        height: rem(145px);
+        border-radius: 50%;
+        overflow: hidden;
+
+        &-pic{
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-name{
+            font-family: 'robotomedium';
+            font-size: rem(28px);
+        }
+        &-data{
+            font-family: 'robotoregular';
+            color: #d0d4d3;
+            font-size: rem(18px);
+        }
+        }
+}
+
+.welcome-nav{
+
+    &__list{
+        display: flex;
+    }
+
+    &__item{
+        flex: auto;
+
+        &:last-child .welcome-nav__link{
+            border-right: 0;
+        }
+    }
+
+    &__link{
+        padding: rem(14px) rem(35px);
+        background-color: #608e54;
+        color: #fff;
+        font-family: 'robotomedium';
+        border-right: 2px solid #a0b99e; 
+        transition: .5s;
+
+        &:hover{
+            background-color: $green;
+        }
+    }
+
+}
+
+
+
+
+
+
