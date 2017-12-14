@@ -14,20 +14,60 @@
     <div class="user">
       <div class="user__img"><img class="user__img-pic" src="../images/cat.jpg" alt=""></div>
       <div class="user__desc">
-        <div class="user__desc-name">Кирилл Синюшкин</div>
+        <div class="user__desc-name">Мистер Кот</div>
         <div class="user__desc-data">Личный сайт веб разработчика     </div>
       </div>
     </div>
     <div class="socials">
       <ul class="socials__list">
         <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
-            <svg class="socials__svg"></svg></a></li>
+            <svg class="socials__svg">
+              <use xlink:href="&quot;images/sprite.svg#vk&quot;"></use>
+            </svg></a></li>
         <li class="socials__item"><a class="socials__link socials__link--github" href="#">
-            <svg class="socials__svg"></svg></a></li>
-        <li class="socials__item"><a class="socials__link socials__link--linkedin" href="#">
-            <svg class="socials__svg"></svg></a></li>
+            <svg class="socials__svg">
+              <use xlink:href="&quot;images/sprite.svg#github&quot;"></use>
+            </svg></a></li>
+        <li class="socials__item"><a class="socials__link socials__link--in" href="#">
+            <svg class="socials__svg">
+              <use xlink:href="&quot;images/sprite.svg#in&quot;"></use>
+            </svg></a></li>
       </ul>
     </div>
+    <section class="header">
+      <div class="header__socials">
+        <div class="socials">
+          <ul class="socials__list">
+            <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
+                <svg class="socials__svg">
+                  <use xlink:href="&quot;images/sprite.svg#vk&quot;"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--github" href="#">
+                <svg class="socials__svg">
+                  <use xlink:href="&quot;images/sprite.svg#github&quot;"></use>
+                </svg></a></li>
+            <li class="socials__item"><a class="socials__link socials__link--in" href="#">
+                <svg class="socials__svg">
+                  <use xlink:href="&quot;images/sprite.svg#in&quot;"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="header__user">
+        <div class="user">
+          <div class="user__img"><img class="user__img-pic" src="../images/cat.jpg" alt=""></div>
+          <div class="user__desc">
+            <div class="user__desc-name">Мистер Кот</div>
+            <div class="user__desc-data">Личный сайт веб разработчика     </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__hamb"></div>
+      <div class="page-down"><a class="page-down__link" href="#">
+          <svg class="svg">
+            <use xlink:href="../../images/icons/arrow_down.svg"></use>
+          </svg></a></div>
+    </section>
     <script src="js/bundle.js" defer></script>
   </body>
 </html>

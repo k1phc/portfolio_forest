@@ -8,6 +8,11 @@ const sourcemap = require('gulp-sourcemaps');
 const csso = require('gulp-csso');
 const rename = require('gulp-rename');
 const browserSync = require('browser-sync').create();
+const svgSprite = require('gulp-svg-sprite');
+const svgmin = require('gulp-svgmin');
+const  replace = require('gulp-replace');
+const cheerio = require('gulp-cheerio');
+
 
 const gulpWebpack = require('gulp-webpack');
 const webpack = require('webpack');
@@ -34,8 +39,9 @@ const paths = {
     images: {
         src: 'src/images/**/*.*',
         dest: 'dist/images/'
-    }
-}
+    },
+
+};
 
 //scss
 function styles() {
@@ -62,7 +68,7 @@ function clear() {
 }
 
 function images() {
-    return gulp.src('./src/images/**/*.{jpg,png}')
+    return gulp.src('./src/images/**/*.{jpg,png,svg}')
     .pipe(imagemin({
         progressive: true,
         optimizationLevel: 3,
@@ -70,9 +76,11 @@ function images() {
     .pipe(gulp.dest(paths.images.dest));
 }
 
+
+
 function server() {
     browserSync.init({
-        server: paths.root
+        server: paths.root,
     });
     browserSync.watch(paths.root + '/**/*.*', browserSync.reload); 
 }
@@ -103,3 +111,4 @@ gulp.task('default', gulp.series(
     gulp.parallel(styles, templates, images, scripts),
     gulp.parallel(watch, server)
 ));
+
