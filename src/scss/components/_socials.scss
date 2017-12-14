@@ -1,29 +1,60 @@
-.socials{
-    display: flex;
-    justify-content: center;
+// .socials{
+//     display: flex;
+//     justify-content: center;
 
-    &__list{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 100%;
+//     &__list{
+//         display: flex;
+//         justify-content: center;
+//         flex-wrap: wrap;
+//         width: 100%;
 
-    }
+//     }
 
-    &__item{
-        margin-right: rem(25px);
-    }
-    &__link{
-        display: block;
+//     &__item{
+//         margin-right: rem(25px);
+//     }
+//     &__link{
+//         display: block;
        
-    }
+//     }
 
-    &__svg{
-        display: inline-block;
-        width: rem(31px);
-        height: rem(22px);
-        fill: #00bfa5;
-        opacity: .5;
-        transition: opacity .5s;
-    }
+//     &__svg{
+//         display: inline-block;
+//         width: rem(31px);
+//         height: rem(22px);
+//         opacity: .5;
+//         transition: opacity .5s;
+//     }
+// }
+
+.socials{
+	height: 100%;
+
+	&__list{
+		display: flex;
+		justify-content: center;
+		margin-top: rem(20px);
+
+	}
+
+	&__item{
+		margin-left: rem(40px);
+	}
+
+	&__link{
+		display: inline-block;
+		width: rem(31px);
+		height: rem(25px);
+
+		&:hover .socials__svg{
+			fill: #fff
+		}
+	}
+
+	&__svg{
+		fill: rgba(255, 255, 255, 0.4);
+        width: 1.25rem;
+        height: 1.25rem;
+        transition: 0.3s;
+	}
 }
