@@ -1,11 +1,48 @@
 extends ../template
+include ../common/_mixins
 
 
 block variables
         - var title = "Обо мне"
 
 block content
-     include ../common/_user
-     include ../common/_hamb-menu
-     include ../common/_socials
      include ../common/_header
+     section.about
+        .about__content
+                .about__content-left
+                        .about__title Обо мне
+                        .about__user
+                                .about__img
+                                        img(src="./images/cat.jpg", alt="" class= 'about__img-pic')
+                                .about__who Кто я
+                                .about__desc
+                                        p.
+                                                Я веб разработчик из Новосибирска. Мне 27 лет. 
+                                                Я занимаюсь разработкой современных сайтов и приложений. 
+                                                Мне нравится делать интересные и современные проекты.
+                                                Этот сайт я сделал в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нём свой контент.
+                                                А пока посмотрите,как тут всё классно и красиво!
+                .about__content-right
+                        .useful
+                                .useful__title Чем я могу быть вам полезен
+                                .useful__desc
+                                        p.
+                                               Больше всего меня привлекет Frontend разработка, но я 
+                                               также знаком и могу решать не сложные задачина Backend. 
+                                               Но давайте по порядку.
+                        .skills
+                                ul.skills-list
+                                        li.skills-list__item
+                                                .skills-row
+                                                        .skills-row__title Frontend
+                                                                +skills-circles([['HTML', '80'], ['CSS', '80'], ['Javascript', '50']])
+                                        li.skills-list__item
+                                                .skills-row
+                                                        .skills-row__title Frontend
+                                                                //- +skills-circles([['HTML', '80'], ['CSS', '80'], 'Javascript', '50'])
+                                        li.skills-list__item
+                                                .skills-row
+                                                        .skills-row__title Frontend
+                                                                //- +skills-circles([['HTML', '80'], ['CSS', '80'], 'Javascript', '50'])
+     include ../common/_footer
+     

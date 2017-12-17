@@ -1,5 +1,8 @@
 @import '../components/_socials';
+@import '../components/_hamb-menu';
+@import '../components/_btn';
 @import '../components/_header';
+@import '../components/_footer';
 
 *{
     margin: 0;
@@ -11,7 +14,6 @@ html,body{
     width: 100%;
     min-height: 100%;
     position: relative;
-    overflow: hidden;
     color: #fff;
     font-size: rem(16px);
 }

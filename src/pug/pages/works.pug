@@ -1,10 +1,65 @@
 extends ../template
 
 
+
 block variables
         - var title = "Мои работы"
 
 
 block content
         include ../common/_header
+        section.works    
+                .works-content
+                        .works-content__left
+                                .works__desc
+                                        h2.works__title Сайт школы онлайн образования 
+                                        .works__tech HTML, CSS, JavaScript
+                                        button.btn.works__btn Посмотреть сайт
+                        .works-content__right
+        section.reviews
+                h2.reviews__title Что обо мне говорят
+                .reviews__user
+                        ul.reviews__list
+                                li.reviews__item
+                                        .reviews__img
+                                                img(src= "../images/user1.png" class= 'reviews__pic')
+                                        .reviews__comment
+                                                p. 
+                                                        Этот парень проходил обучение веб-разработке не где-то, 
+                                                        а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                                        .reviews__user-desc
+                                        .reviews__user-name Ковальчук Дмитрий
+                                        .reviews__user-pos Основатель Loftschool
+                                li.reviews__item
+                                        .reviews__img
+                                                img(src= "../images/user2.png" class= 'reviews__pic')
+                                        .reviews__comment
+                                                p.
+                                                        Этот код выдержит любые испытания. 
+                                                        Только пожалуйста, не загружается сайт на слишком старых браузерах!
+                                        .reviews__user-desc
+                                        .reviews__user-name Сабанцев Владимир
+                                        .reviews__user-pos Преподаватель
+                .feedback
+                        form(action="" class= 'feedback__form')
+                        h2.feedback__title Связаться со мной
+                        .feedback__content
+                                .feedback__row
+                                        input(type="text" name= 'name' class= 'feedback__input' placeholder= 'Имя')
+                                .feedback__row
+                                        input(type="email" name= 'email' class= 'feedback__input' placeholder= 'Email')
+                                .feedback__row
+                                        textarea(name="", class= 'feedback__area' placeholder= 'Ваше сообщение')
+                                .feedback__row
+                                        .feedback__btns
+                                        button.btn.btn__send Отправить
+                                        button.btn.btn__clear Очистить
+                include ../common/_footer
+                
+              
+                                       
+
+
+
+
     

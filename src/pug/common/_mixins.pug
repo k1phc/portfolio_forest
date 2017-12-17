@@ -5,9 +5,12 @@ mixin nav(className, items)
                   li(class=`${className}__item`)
                       a(class=`${className}__link` href=item.href)= item.text
 
-
-//- mixin icon(name,mod)
-//- 	- mod = mod || ''
-//- 	svg(class="icon icon-" + name + ' ' + mod)
-//- 		use(xlink:href="i/sprite/sprite.svg#" + name)
-//-             use(xlink:href=require('./assets/img/svg/sprite.svg')+ '#' + 'vk')
+mixin skills-circles(skills)
+      ul.skills__list
+            each skill in skills
+                  li.skills__item
+                        .skill-circle
+                              svg(viewBox="0 0 110 110").skill__svg
+                                    <circle r="45" cx="50%" cy="50%"  class='circle__bg' />
+                                    <circle r="45" cx="50%" cy="50%" transform='rotate(-90 55 55)' class='circle__front circle-30' />
+                              span.skill__circle-title= `${skill[0]}`

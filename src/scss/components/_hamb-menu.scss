@@ -1,0 +1,38 @@
+.hamb-menu {
+    cursor: pointer;
+    position: relative;
+    width: 40px;
+    height: 40px;
+  }
+  .menu-item {
+    backface-visibility: hidden;
+    position: absolute;
+    border-top: 5px solid white;
+    width: 100%;
+    transition: 0.55s;
+    border-radius: rem(2px);
+  }
+  .menu-top {
+    top: 0;
+  }
+  .menu-middle {
+    top: 12px;
+  }
+  .menu-bottom {
+    top: 24px;
+  }
+  .menu-top-click {
+    backface-visibility: hidden;
+    top: 15px;
+    transform: rotate(50deg);
+    transition: 0.55s 0.5s;
+  }
+  .menu-middle-click {
+    opacity: 0;
+  }
+  .menu-bottom-click {
+    backface-visibility: hidden;
+    top: 15px;
+    transform: rotate(-410deg);
+    transition: 0.55s 0.5s;
+  }

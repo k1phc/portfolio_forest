@@ -1,0 +1,80 @@
+.about{
+    position: relative;
+    &__content{
+        width: 100%;
+        height: rem(755px);
+        display: flex;
+
+        &-left{
+            width: 50%;
+            background-color: #ebefe2;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'sansus_webissimoregular';
+            
+        }
+        &-right{
+            width: 50%;
+            background-color: #f4f5f0;
+        }
+    }
+
+    &__title{
+        width: 50%;
+        @extend .works__title;
+    }
+
+    &__user{
+        width: 50%;
+    }
+
+    &__img{
+        width: rem(410px);
+        height: rem(380px);
+
+        &-pic{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__who{
+        @extend .works__title;
+    }
+    
+    &__desc{
+        color: #566358;
+    }
+
+}
+
+.useful{
+    &__title{
+        @extend .works__title;
+    }
+
+    &__desc{
+        color: #566358;
+    }
+}
+
+.skills{
+    &-row__title{
+        color: #566358;
+    }
+}
+.skill__svg{
+    width: 100px;
+    fill: none;
+    stroke-width: 15;
+}
+
+.circle__bg{
+    stroke: #dfdcd5;
+}
+
+.circle__front{
+    stroke: #77a266;
+    stroke-dasharray: 180 280;
+}

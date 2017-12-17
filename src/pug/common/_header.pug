@@ -1,14 +1,20 @@
 section.header
-    .header__socials
-        include _socials
+    .header__bar
+        .header__socials
+            include _socials
+        .header__hamb
+            include _hamb-menu
     .header__user
         include _user
-    .header__hamb
-        include _hamb-menu
+    .bg-img
+        svg.bg-svg
+            use(xlink:href='images/sprite.svg#portfolio_header')
     .page-down
         a(href='#' class = 'page-down__link')
-            svg.svg
+            svg.page-down__svg
                 use(xlink:href='images/sprite.svg#arrow_down')
-                
+    .header__triangle-left
+    .header__triangle-right
+         
 
     

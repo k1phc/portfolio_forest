@@ -12,22 +12,30 @@
   </head>
   <body>
     <section class="header">
-      <div class="header__socials">
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
-                <svg class="socials__svg">
-                  <use xlink:href="images/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--github" href="#">
-                <svg class="socials__svg">
-                  <use xlink:href="images/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--in" href="#">
-                <svg class="socials__svg">
-                  <use xlink:href="images/sprite.svg#in"></use>
-                </svg></a></li>
-          </ul>
+      <div class="header__bar">
+        <div class="header__socials">
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
+                  <svg class="socials__svg">
+                    <use xlink:href="./images/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--github" href="#">
+                  <svg class="socials__svg">
+                    <use xlink:href="./images/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--in" href="#">
+                  <svg class="socials__svg">
+                    <use xlink:href="./images/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="header__hamb"><div class="hamb-menu">
+<span class="menu-item menu-top"></span>
+<span class="menu-item menu-middle"></span>
+<span class="menu-item menu-bottom"></span>
+</div>
         </div>
       </div>
       <div class="header__user">
@@ -39,11 +47,133 @@
           </div>
         </div>
       </div>
-      <div class="header__hamb"></div>
+      <div class="bg-img">
+        <svg class="bg-svg">
+          <use xlink:href="images/sprite.svg#portfolio_header"></use>
+        </svg>
+      </div>
       <div class="page-down"><a class="page-down__link" href="#">
-          <svg class="svg">
+          <svg class="page-down__svg">
             <use xlink:href="images/sprite.svg#arrow_down"></use>
           </svg></a></div>
+      <div class="header__triangle-left"></div>
+      <div class="header__triangle-right"></div>
+    </section>
+    <section class="works">   
+      <div class="works-content">
+        <div class="works-content__left">
+          <div class="works__desc">
+            <h2 class="works__title">Сайт школы онлайн образования </h2>
+            <div class="works__tech">HTML, CSS, JavaScript</div>
+            <button class="btn works__btn">Посмотреть сайт</button>
+          </div>
+        </div>
+        <div class="works-content__right"></div>
+      </div>
+    </section>
+    <section class="reviews">
+      <h2 class="reviews__title">Что обо мне говорят</h2>
+      <div class="reviews__user">
+        <ul class="reviews__list">
+          <li class="reviews__item">
+            <div class="reviews__img"><img class="reviews__pic" src="../images/user1.png"></div>
+            <div class="reviews__comment">
+              <p>
+                Этот парень проходил обучение веб-разработке не где-то, 
+                а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+              </p>
+            </div>
+            <div class="reviews__user-desc"></div>
+            <div class="reviews__user-name">Ковальчук Дмитрий</div>
+            <div class="reviews__user-pos">Основатель Loftschool</div>
+          </li>
+          <li class="reviews__item">
+            <div class="reviews__img"><img class="reviews__pic" src="../images/user2.png"></div>
+            <div class="reviews__comment">
+              <p>
+                Этот код выдержит любые испытания. 
+                Только пожалуйста, не загружается сайт на слишком старых браузерах!
+              </p>
+            </div>
+            <div class="reviews__user-desc"></div>
+            <div class="reviews__user-name">Сабанцев Владимир</div>
+            <div class="reviews__user-pos">Преподаватель</div>
+          </li>
+        </ul>
+      </div>
+      <div class="feedback">
+        <form class="feedback__form" action=""></form>
+        <h2 class="feedback__title">Связаться со мной</h2>
+        <div class="feedback__content">
+          <div class="feedback__row">
+            <input class="feedback__input" type="text" name="name" placeholder="Имя">
+          </div>
+          <div class="feedback__row">
+            <input class="feedback__input" type="email" name="email" placeholder="Email">
+          </div>
+          <div class="feedback__row">
+            <textarea class="feedback__area" name="" placeholder="Ваше сообщение"></textarea>
+          </div>
+          <div class="feedback__row">
+            <div class="feedback__btns"></div>
+            <button class="btn btn__send">Отправить</button>
+            <button class="btn btn__clear">Очистить</button>
+          </div>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="footer__up">
+          <div class="footer__block">
+            <div class="footer__desc">
+              <p>
+                Этот сайт я сделал в рамках обучения 
+                в Школе онлайн образования LoftSchool. 
+              </p>
+            </div>
+          </div>
+          <div class="footer__block">
+                  <nav class="footer-nav">
+                    <ul class="footer-nav__list">
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="works.html">Мои работы</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="about.html">Обо мне</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="blog.html">Блог</a></li>
+                      <li class="footer-nav__item"><a class="footer-nav__link" href="index.html">Авторизоваться</a></li>
+                    </ul>
+                  </nav>
+            <div class="socials">
+              <ul class="socials__list">
+                <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
+                    <svg class="socials__svg">
+                      <use xlink:href="./images/sprite.svg#vk"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link--github" href="#">
+                    <svg class="socials__svg">
+                      <use xlink:href="./images/sprite.svg#github"></use>
+                    </svg></a></li>
+                <li class="socials__item"><a class="socials__link socials__link--in" href="#">
+                    <svg class="socials__svg">
+                      <use xlink:href="./images/sprite.svg#in"></use>
+                    </svg></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer__block">
+            <div class="footer__quote">
+              <blockquote>
+                <p>
+                  Всегда пишите код так, будто сопровождать его 
+                  будет склонный к насилию психопат, который знает, 
+                  где вы живете.
+                </p>
+                <cite>Martin Golding</cite>
+              </blockquote>
+            </div>
+          </div>
+        </div>
+        <div class="footer__down">
+          <p>Мистер Кот | Создано с любовью в LoftSchool | 2017</p>
+        </div>
+      </footer>
     </section>
     <script src="js/bundle.js" defer></script>
   </body>

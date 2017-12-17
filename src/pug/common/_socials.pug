@@ -3,8 +3,8 @@
             each social in ['vk', 'github', 'in']
                 li.socials__item
                     a(href='#' class=`socials__link socials__link--${social}`)
-                        svg.socials__svg
-                            use(xlink:href=`images/sprite.svg#${social}`)
+                        svg(class='socials__svg')
+                            use(xlink:href=`./images/sprite.svg#${social}`)
                       
                             
                       

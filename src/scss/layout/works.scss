@@ -1,0 +1,146 @@
+.works{
+    position: relative;
+    &-content{
+        width: 100%;
+        height: rem(755px);
+        display: flex;
+
+        &__left{
+            width: 50%;
+            background-color: #ebefe1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'sansus_webissimoregular';
+            
+        }
+        &__right{
+            width: 50%;
+            background-color: #e2e4d7;
+        }
+    }
+
+    &__desc{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__title{
+        font-size: rem(34px);
+        color: #536358;
+        width: rem(322px);
+        text-align: center;
+        position: relative;
+        padding-bottom: rem(30px);
+
+        &:after{
+            display: block;
+            content: '';
+            width: rem(91px);
+            height: rem(3px);
+            border-bottom: rem(3px) solid #586458;
+            position: absolute;
+            left: 40%;
+            padding-top: rem(10px);
+        }
+    }
+
+    &__tech{
+        color: #4b8934;
+        padding-bottom: rem(30px);
+        text-align: center;
+    }
+
+    &__btn{
+        border-radius: rem(18px);
+       
+    }
+     
+}
+
+.reviews{
+    background: url(../images/works.jpg) center center no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        font-size: rem(32px);
+        font-family: 'sansus_webissimoregular';
+        width: rem(336px);
+        color: #373e42;   
+    }
+
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        max-width: rem(378px);
+    }
+
+    &__img{
+        width: rem(78px);
+        height: rem(78px);
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__comment{
+        color: #afb4a0;
+    }
+
+    &__user{
+
+        &-name{
+            color: #4e8839;
+        }
+    
+        &-pos{
+            color: #444a4e;
+        }
+        
+    }
+}
+
+    .feedback{
+        width: rem(380px);
+        height: rem(464px);
+        background-color: rgba(218,219,214,0.5);
+        border-radius: rem(5px);
+
+        &__title{
+            @extend .works__title;
+            text-align: center;
+        }
+
+        &__content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &__row{
+            width: rem(340px);
+            margin-bottom: rem(20px);
+        }
+
+        &__input, &__area{
+            width: 100%;
+            border: none;
+            border-radius: rem(16px);
+            padding: rem(14px);
+        }
+        &__area{
+            height: rem(140px);
+        }
+
+
+    
+    }
+
+  
+   
+
