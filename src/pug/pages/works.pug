@@ -8,7 +8,12 @@ block variables
 
 block content
         include ../common/_header
-        section.works    
+                
+        section.works
+                .works-content__title Мои работы
+                        .works__bg
+                                svg.works__svg 
+                                        use(xlink:href='images/sprite.svg#works_header')   
                 .works-content
                         .works-content__left
                                 .works__desc
@@ -28,8 +33,8 @@ block content
                                                         Этот парень проходил обучение веб-разработке не где-то, 
                                                         а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
                                         .reviews__user-desc
-                                        .reviews__user-name Ковальчук Дмитрий
-                                        .reviews__user-pos Основатель Loftschool
+                                                .reviews__user-name Ковальчук Дмитрий
+                                                .reviews__user-pos Основатель Loftschool
                                 li.reviews__item
                                         .reviews__img
                                                 img(src= "./images/user2.png" class= 'reviews__pic')
@@ -38,8 +43,8 @@ block content
                                                         Этот код выдержит любые испытания. 
                                                         Только пожалуйста, не загружается сайт на слишком старых браузерах!
                                         .reviews__user-desc
-                                        .reviews__user-name Сабанцев Владимир
-                                        .reviews__user-pos Преподаватель
+                                                .reviews__user-name Сабанцев Владимир
+                                                .reviews__user-pos Преподаватель
                 .feedback
                         form(action="" class= 'feedback__form')
                         h2.feedback__title Связаться со мной
@@ -50,10 +55,14 @@ block content
                                         input(type="email" name= 'email' class= 'feedback__input' placeholder= 'Email')
                                 .feedback__row
                                         textarea(name="", class= 'feedback__area' placeholder= 'Ваше сообщение')
-                                .feedback__row
-                                        .feedback__btns
-                                        button.btn.btn__send Отправить
-                                        button.btn.btn__clear Очистить
+                                
+                                .feedback__btns
+                                        button(type='submit').btn.feedback__btns--send Отправить
+                                        button(type='clear').btn.feedback__btns--clear Очистить
+                        .page-up
+                                a(href='#' class = 'page-up__link')
+                                        svg.page-up__svg
+                                                use(xlink:href='images/sprite.svg#arrow_up')
                 include ../common/_footer
                 
               

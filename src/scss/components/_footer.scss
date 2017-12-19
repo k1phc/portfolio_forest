@@ -1,15 +1,47 @@
 .footer{
     width: 100%;
     height: rem(185px);
+    margin-top: rem(156px);
+
     &__up{
         width: 100%;
         height: rem(148px);
         background-color: rgba(53, 59, 63, 0.85);
         display: flex;
+        align-items: center;
     }
 
     &__block{
         width: 33%;
+    }
+
+    &__desc{
+        line-height: rem(24px);
+        padding-left: rem(24px);
+    }
+
+    &-nav{
+        width: 100%;
+
+        &__list{
+            display: flex;
+        }
+        &__item{
+            margin-right: rem(32px);
+        }
+        &__link{
+            color: #fff;
+        }
+
+       
+    }
+
+    &__quote{
+        color: #7f8385;
+        line-height: rem(24px);
+        &-author{
+            color: #a4a6a6;
+        }
     }
 
     &__down{

@@ -63,6 +63,10 @@
 .page-down{
     z-index: 1;
    text-align: center;
+   position: absolute;
+   left: 50%;
+   bottom: 10%;
+   transform: translate(-50%, -50%);
 
    &__link{
     display: block;

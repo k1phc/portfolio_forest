@@ -38,16 +38,19 @@
 
 
 .welcome-nav{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
    
 
     &__list{
         display: flex;
-
-      
+        height: 100%;
+        width: 100%;
     }
 
     &__item{
-        flex: 1 1 auto;
+        width: 50%;
      
 
         &:last-child .welcome-nav__link{
@@ -57,10 +60,13 @@
 
     &__link{
         display: block;
-        padding: rem(14px) rem(34px);
+        height: 100%;
+        width: 100%;
+        padding: rem(14px) rem(20px);
         background-color: #608e54;
         color: #fff;
         font-family: 'robotomedium';
+        text-align: center;
         border-right: rem(1px) solid #a0b99e; 
         transition: .5s;
 

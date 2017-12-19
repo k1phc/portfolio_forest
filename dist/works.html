@@ -59,7 +59,14 @@
       <div class="header__triangle-left"></div>
       <div class="header__triangle-right"></div>
     </section>
-    <section class="works">   
+    <section class="works">
+      <div class="works-content__title">Мои работы
+        <div class="works__bg">
+          <svg class="works__svg"> 
+            <use xlink:href="images/sprite.svg#works_header">  </use>
+          </svg>
+        </div>
+      </div>
       <div class="works-content">
         <div class="works-content__left">
           <div class="works__desc">
@@ -83,9 +90,10 @@
                 а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
               </p>
             </div>
-            <div class="reviews__user-desc"></div>
-            <div class="reviews__user-name">Ковальчук Дмитрий</div>
-            <div class="reviews__user-pos">Основатель Loftschool</div>
+            <div class="reviews__user-desc">
+              <div class="reviews__user-name">Ковальчук Дмитрий</div>
+              <div class="reviews__user-pos">Основатель Loftschool</div>
+            </div>
           </li>
           <li class="reviews__item">
             <div class="reviews__img"><img class="reviews__pic" src="./images/user2.png"></div>
@@ -95,9 +103,10 @@
                 Только пожалуйста, не загружается сайт на слишком старых браузерах!
               </p>
             </div>
-            <div class="reviews__user-desc"></div>
-            <div class="reviews__user-name">Сабанцев Владимир</div>
-            <div class="reviews__user-pos">Преподаватель</div>
+            <div class="reviews__user-desc">
+              <div class="reviews__user-name">Сабанцев Владимир</div>
+              <div class="reviews__user-pos">Преподаватель</div>
+            </div>
           </li>
         </ul>
       </div>
@@ -114,12 +123,15 @@
           <div class="feedback__row">
             <textarea class="feedback__area" name="" placeholder="Ваше сообщение"></textarea>
           </div>
-          <div class="feedback__row">
-            <div class="feedback__btns"></div>
-            <button class="btn btn__send">Отправить</button>
-            <button class="btn btn__clear">Очистить</button>
+          <div class="feedback__btns">
+            <button class="btn feedback__btns--send" type="submit">Отправить</button>
+            <button class="btn feedback__btns--clear" type="clear">Очистить</button>
           </div>
         </div>
+        <div class="page-up"><a class="page-up__link" href="#">
+            <svg class="page-up__svg">
+              <use xlink:href="images/sprite.svg#arrow_up"></use>
+            </svg></a></div>
       </div>
       <footer class="footer">
         <div class="footer__up">
@@ -159,13 +171,13 @@
           </div>
           <div class="footer__block">
             <div class="footer__quote">
-              <blockquote>
+              <blockquote class="quote">
                 <p>
                   Всегда пишите код так, будто сопровождать его 
                   будет склонный к насилию психопат, который знает, 
                   где вы живете.
                 </p>
-                <cite>Martin Golding</cite>
+                <cite class="footer__quote-author">Martin Golding</cite>
               </blockquote>
             </div>
           </div>
