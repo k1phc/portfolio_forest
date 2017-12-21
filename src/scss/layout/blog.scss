@@ -1,0 +1,56 @@
+.blog{
+    display: flex;
+    padding-top: rem(70px);
+
+    &__content{
+        width: 70%;
+    }
+}
+
+.side-menu{
+    padding-right: rem(30px);
+    &__block{
+        width: 30%;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__item{
+        margin-bottom: rem(41px);
+    }
+    &__link{
+        color: #848e91;
+
+        &--active{
+            color: #6c9c5a;
+            border-right: 3px solid #6c9c5a;
+        }
+    }
+}
+.article{
+    padding-bottom: rem(90px);
+    &__title{
+        color: #455a64;
+        font-size: rem(35px);
+        font-family: 'sansus_webissimoregular';
+        padding-bottom: rem(24px);
+    }
+
+    &__date{
+        color: #afc3a3;
+        padding-bottom: rem(24px);
+    }
+    &__text{
+        color: #848e91;
+        font-size: rem(16px);
+        max-width: rem(872px);
+        line-height: rem(24px);
+
+        p{
+            padding-bottom: rem(26px);
+        }
+    }
+}

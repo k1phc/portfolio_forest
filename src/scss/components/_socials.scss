@@ -11,6 +11,10 @@
 
 	&__item{
 		margin-left: rem(40px);
+
+		&:first-child{
+			margin-left: 0;
+		}
 	}
 
 	&__link{
