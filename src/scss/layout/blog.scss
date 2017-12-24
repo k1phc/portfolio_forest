@@ -4,6 +4,11 @@
 
     &__content{
         width: 70%;
+
+        @include tablets{
+            width: 100%;
+            margin: 0 rem(30px);
+        }
     }
 }
 
@@ -11,6 +16,10 @@
     padding-right: rem(30px);
     &__block{
         width: 30%;
+
+        @include tablets{
+            display: none;
+        }
     }
     &__list{
         display: flex;

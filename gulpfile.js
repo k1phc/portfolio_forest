@@ -72,12 +72,17 @@ function clear() {
 }
 
 function images() {
-    return gulp.src('./src/images/**/*.{jpg,png,svg}')
+    return gulp.src('./src/images/**/*.{jpg,png}')
     .pipe(imagemin({
         progressive: true,
         optimizationLevel: 3,
     }))
     .pipe(gulp.dest(paths.images.dest));
+}
+
+ function svg() {
+   return gulp.src('./src/images/**/*.svg') 
+        .pipe(gulp.dest('dist/images'))
 }
 
 function fonts() {
@@ -113,11 +118,12 @@ exports.templates = templates;
 exports.images = images;
 exports.fonts = fonts;
 exports.clear = clear;
+exports.svg = svg;
 
 
 
 gulp.task('default', gulp.series(
-    clear,
+    clear, svg,
     gulp.parallel(styles, templates, images, fonts, scripts),
     gulp.parallel(watch, server)
 ));

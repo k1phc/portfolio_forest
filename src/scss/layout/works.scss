@@ -168,6 +168,7 @@
         height: rem(464px);
         background-color: rgba(218,219,214,0.5);
         border-radius: rem(5px);
+        margin-bottom: rem(300px);
 
         &__title{
             @extend .works__title;
