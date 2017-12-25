@@ -1,9 +1,11 @@
+include _mixins.pug
 section.header
     .header__bar
         .header__socials
             include _socials
         .header__hamb
             include _hamb-menu
+        +nav('hamb-menu', [{href: 'works.html', text: 'Мои работы'}, {href: 'about.html', text: 'Обо мне'}, {href: 'blog.html', text:'Блог'}, {href: 'index.html', text:'Авторизоваться'}])
     .header__user
         include _user
     .bg-img

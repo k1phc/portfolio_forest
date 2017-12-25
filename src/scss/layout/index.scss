@@ -22,7 +22,7 @@
     right: rem(100px);
 }
 
-.welcome-block{
+.welcome-block, .flip-block{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -76,6 +76,168 @@
     }
 
 }
+
+.auth-form{
+    width: 100%;
+
+    &__title{
+        font-size: rem(35px);
+        font-family: 'sansus_webissimoregular';
+        text-align: center;
+        padding-top: rem(40px);
+        padding-bottom: rem(30px);
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__row{
+        width: rem(340px);
+        margin-bottom: rem(20px);
+        display: flex; 
+    }
+
+    &__img{
+        width: rem(46px);
+        height: rem(46px);
+        background-color: #ecebe7;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-bottom-left-radius: rem(22px);
+        border-top-left-radius: rem(22px);
+    }
+
+    &__svg{
+        width: rem(18px);
+        height: rem(18px);
+        fill: #c7d1d3;
+    }
+
+    &__input{
+        width: 100%;
+        padding: rem(12px);
+        border-bottom-right-radius: rem(22px);
+        border-top-right-radius: rem(22px);
+        border: 1px solid transparent;
+        font-size: rem(16px);
+    }
+
+    &__btns{
+        display: flex;
+        width: 100%;
+    }
+}
+
+.auth-btns{
+    width: 50%;
+
+    &:first-child{
+        border-right: 1px solid #a0b99e;
+    }
+}
+
+.ishuman{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__input{
+        position: absolute;
+        left: rem(-99999px);
+        top: 0;
+
+
+        &:checked+.ishuman__square>.ishuman__svg{
+            width: 100%;
+            height: 100%;
+            transition:.5s;
+        }
+
+        &:checked+.ishuman__square+.ishuman__title{
+            color: #608e54;
+            transition: .5s;
+        }
+    }
+
+    &__square{
+        width: rem(20px);
+        height: rem(20px);
+        background-color: #6a9b59;
+        border-radius: rem(4px);
+    }
+
+    &__svg{
+        width: 0;
+        height: 0;
+        fill: fade-out( #6a9b59, 0.1);
+        transition: .4s;
+    }
+}
+
+.radio{
+
+    &__row{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &__title{
+        width: 100%;
+        text-align: center;
+    }
+
+    &__label{
+        display: flex;
+    }
+
+    &__input{
+        position: absolute;
+        left: rem(-99999px);
+        top: 0;
+
+        &:checked+.radio__circle:after{
+            width: rem(8px);
+            height: rem(8px);
+            background-color: #6e9a5b;
+            transition: .5s;
+        }
+        
+        &:checked+.radio__circle+.radio__text{
+            color: #608e54;
+            transition: .5s;
+        }
+    }
+
+    &__circle{
+        position: relative;
+        display: inline-block;
+        width: rem(18px);
+        height: rem(18px);
+        background-color: #fff;
+        border-radius: 50%;
+        margin-right: rem(10px);
+
+        &:after{
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            border-radius: 50%;
+            width: 0;
+            height: 0;
+            transform: translate(-50%,-50%);
+        }
+    }
+    
+
+}
+
+
 
 
 

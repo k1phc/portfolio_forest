@@ -1,4 +1,4 @@
-.hamb-menu {
+.hamb-menu__block {
     cursor: pointer;
     position: relative;
     width: 40px;
@@ -29,6 +29,7 @@
   border: none;
   width: 100%;
   height: 100%;
+  z-index: 6;
  
 }
 .opened .menu-top {

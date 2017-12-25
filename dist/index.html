@@ -14,7 +14,7 @@
     <div class="wrapper"></div>
     <div class="welcome-bg">
       <div class="welcome-auth">
-        <button class="auth-button" type="button">Авторизоваться</button>
+        <button class="auth-button" type="button" id="auth-btn">Авторизоваться</button>
       </div>
       <div class="welcome-block">
         <div class="user">
@@ -47,6 +47,57 @@
             <li class="welcome-nav__item"><a class="welcome-nav__link" href="blog.html">Блог</a></li>
           </ul>
         </nav>
+      </div>
+      <div class="flip-block">
+        <form class="auth-form" action="">
+          <h2 class="auth-form__title">Авторизуйтесь</h2>
+          <div class="auth-form__content">
+            <div class="auth-form__row">
+              <div class="auth-form__img">
+                <svg class="auth-form__svg">
+                  <use xlink:href="images/sprite.svg#login"></use>
+                </svg>
+              </div>
+              <input class="auth-form__input" placeholder="Логин" type="text" name="login">
+            </div>
+            <div class="auth-form__row">
+              <div class="auth-form__img">
+                <svg class="auth-form__svg">
+                  <use xlink:href="images/sprite.svg#password"></use>
+                </svg>
+              </div>
+              <input class="auth-form__input" placeholder="Пароль" type="password" name="password">
+            </div>
+            <div class="auth-form__row">
+              <label class="ishuman">
+                <input class="ishuman__input" type="checkbox">
+                <div class="ishuman__square">
+                  <svg class="ishuman__svg">
+                    <use xlink:href="images/sprite.svg#check"></use>
+                  </svg>
+                </div>
+                <div class="ishuman__title">Я человек</div>
+              </label>
+            </div>
+            <div class="auth-form__row radio__row">
+              <div class="radio__title">Вы точно не робот?</div>
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="ishuman">
+                <div class="radio__circle"></div>
+                <div class="radio__text">Да</div>
+              </label>
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="ishuman">
+                <div class="radio__circle"></div>
+                <div class="radio__text">Не уверен</div>
+              </label>
+            </div>
+            <div class="auth-form__btns">
+              <button class="btn auth-btns"> На главную</button>
+              <button class="btn auth-btns">Войти  </button>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
     <script src="js/bundle.js" defer></script>

@@ -9,10 +9,44 @@ block content
       .wrapper
       .welcome-bg
         .welcome-auth
-           button('type'= 'button').auth-button Авторизоваться
+           button('type'= 'button').auth-button#auth-btn Авторизоваться
         .welcome-block
           include ../common/_user
           include ../common/_socials
-          +nav('welcome-nav', [{href: 'works.html', text: 'Мои работы'}, {href: 'about.html', text: 'Обо мне'}, {href: 'blog.html', text:'Блог'}])     
+          +nav('welcome-nav', [{href: 'works.html', text: 'Мои работы'}, {href: 'about.html', text: 'Обо мне'}, {href: 'blog.html', text:'Блог'}])
+        .flip-block
+          form(action="" class='auth-form')
+            h2.auth-form__title Авторизуйтесь
+            .auth-form__content
+              .auth-form__row
+                .auth-form__img
+                  svg.auth-form__svg
+                    use(xlink:href='images/sprite.svg#login')
+                input.auth-form__input(placeholder='Логин' type='text' name='login')
+              .auth-form__row
+                .auth-form__img
+                  svg.auth-form__svg
+                    use(xlink:href='images/sprite.svg#password')
+                input.auth-form__input(placeholder='Пароль' type='password' name='password')
+              .auth-form__row
+                label.ishuman
+                  input.ishuman__input(type='checkbox')
+                  .ishuman__square
+                    svg.ishuman__svg
+                      use(xlink:href='images/sprite.svg#check')
+                  .ishuman__title Я человек
+              .auth-form__row.radio__row
+                .radio__title Вы точно не робот?
+                label.radio__label
+                  input.radio__input(type='radio' name='ishuman')
+                  .radio__circle
+                  .radio__text Да
+                label.radio__label
+                  input.radio__input(type='radio' name='ishuman')
+                  .radio__circle
+                  .radio__text Не уверен
+              .auth-form__btns
+                button.btn.auth-btns  На главную
+                button.btn.auth-btns Войти  
         
         
