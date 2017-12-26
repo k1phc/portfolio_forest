@@ -48,6 +48,25 @@ block content
                                                                 .skills-row__title WorkFlow
                                                                 +skills-circles([['Git', '80'], ['Gulp', '80'], ['Bower', '50']])
         section.map
+                .map__contacts
+                        .map__contacts-title Контакты
+                        ul.contacts
+                                li.contacts__item
+                                        svg.contacts__svg
+                                                use(xlink:href="images/sprite.svg#skype")
+                                        a(href='skype:zzz').contacts__link zzzz
+                                li.contacts__item
+                                        svg.contacts__svg
+                                                use(xlink:href="images/sprite.svg#envelope")
+                                        a(href='mailto:cat@mail.com').contacts__link cat@mail.ru
+                                li.contacts__item
+                                        svg.contacts__svg
+                                                use(xlink:href="images/sprite.svg#phone")
+                                        a(href='tel:+71116666666').contacts__link +7 111 666 66 66
+                                li.contacts__item
+                                        svg.contacts__svg
+                                                use(xlink:href="images/sprite.svg#map_marker")
+                                        .contacts__link Nowhere
                 .map__google#map  
                 include ../common/_footer
 block script 

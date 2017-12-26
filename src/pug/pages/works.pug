@@ -46,23 +46,25 @@ block content
                                                 .reviews__user-name Сабанцев Владимир
                                                 .reviews__user-pos Преподаватель
                 .feedback
-                        form(action="" class= 'feedback__form')
-                        h2.feedback__title Связаться со мной
-                        .feedback__content
-                                .feedback__row
-                                        input(type="text" name= 'name' class= 'feedback__input' placeholder= 'Имя')
-                                .feedback__row
-                                        input(type="email" name= 'email' class= 'feedback__input' placeholder= 'Email')
-                                .feedback__row
-                                        textarea(name="", class= 'feedback__area' placeholder= 'Ваше сообщение')
+                        .feedback__blur
+                        .feedback__form-wrap
+                                form(action="" class= 'feedback__form')
+                                        h2.feedback__title Связаться со мной
+                                        .feedback__content
+                                                .feedback__row
+                                                        input(type="text" name= 'name' class= 'feedback__input' placeholder= 'Имя')
+                                                .feedback__row
+                                                        input(type="email" name= 'email' class= 'feedback__input' placeholder= 'Email')
+                                                .feedback__row
+                                                        textarea(name="", class= 'feedback__area' placeholder= 'Ваше сообщение')
                                 
-                                .feedback__btns
-                                        button(type='submit').btn.feedback__btns--send Отправить
-                                        button(type='clear').btn.feedback__btns--clear Очистить
-                        .page-up
-                                a(href='#' class = 'page-up__link')
-                                        svg.page-up__svg
-                                                use(xlink:href='images/sprite.svg#arrow_up')
+                                                .feedback__btns
+                                                        button(type='submit').btn.feedback__btns--send Отправить
+                                                        button(type='clear').btn.feedback__btns--clear Очистить
+                .page-up
+                        a(href='#' class = 'page-up__link')
+                                svg.page-up__svg
+                                        use(xlink:href='images/sprite.svg#arrow_up')
                 include ../common/_footer
                 
               

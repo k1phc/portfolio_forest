@@ -13,7 +13,8 @@
 }
 
 .side-menu{
-    padding-right: rem(30px);
+    padding: 0 rem(30px);
+
     &__block{
         width: 30%;
 
@@ -29,6 +30,7 @@
 
     &__item{
         margin-bottom: rem(41px);
+        text-align: right;
     }
     &__link{
         color: #848e91;
@@ -41,6 +43,7 @@
 }
 .article{
     padding-bottom: rem(90px);
+    padding-right: rem(30px);
     &__title{
         color: #455a64;
         font-size: rem(35px);

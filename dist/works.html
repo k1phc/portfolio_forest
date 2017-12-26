@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <section class="header">
+    <header class="header">
       <div class="header__bar">
         <div class="header__socials">
           <div class="socials">
@@ -66,7 +66,7 @@
           </svg></a></div>
       <div class="header__triangle-left"></div>
       <div class="header__triangle-right"></div>
-    </section>
+    </header>
     <section class="works">
       <div class="works-content__title">Мои работы
         <div class="works__bg">
@@ -119,28 +119,32 @@
         </ul>
       </div>
       <div class="feedback">
-        <form class="feedback__form" action=""></form>
-        <h2 class="feedback__title">Связаться со мной</h2>
-        <div class="feedback__content">
-          <div class="feedback__row">
-            <input class="feedback__input" type="text" name="name" placeholder="Имя">
-          </div>
-          <div class="feedback__row">
-            <input class="feedback__input" type="email" name="email" placeholder="Email">
-          </div>
-          <div class="feedback__row">
-            <textarea class="feedback__area" name="" placeholder="Ваше сообщение"></textarea>
-          </div>
-          <div class="feedback__btns">
-            <button class="btn feedback__btns--send" type="submit">Отправить</button>
-            <button class="btn feedback__btns--clear" type="clear">Очистить</button>
-          </div>
+        <div class="feedback__blur"></div>
+        <div class="feedback__form-wrap">
+          <form class="feedback__form" action="">
+            <h2 class="feedback__title">Связаться со мной</h2>
+            <div class="feedback__content">
+              <div class="feedback__row">
+                <input class="feedback__input" type="text" name="name" placeholder="Имя">
+              </div>
+              <div class="feedback__row">
+                <input class="feedback__input" type="email" name="email" placeholder="Email">
+              </div>
+              <div class="feedback__row">
+                <textarea class="feedback__area" name="" placeholder="Ваше сообщение"></textarea>
+              </div>
+              <div class="feedback__btns">
+                <button class="btn feedback__btns--send" type="submit">Отправить</button>
+                <button class="btn feedback__btns--clear" type="clear">Очистить</button>
+              </div>
+            </div>
+          </form>
         </div>
-        <div class="page-up"><a class="page-up__link" href="#">
-            <svg class="page-up__svg">
-              <use xlink:href="images/sprite.svg#arrow_up"></use>
-            </svg></a></div>
       </div>
+      <div class="page-up"><a class="page-up__link" href="#">
+          <svg class="page-up__svg">
+            <use xlink:href="images/sprite.svg#arrow_up"></use>
+          </svg></a></div>
       <footer class="footer">
         <div class="footer__up">
           <div class="footer__block">

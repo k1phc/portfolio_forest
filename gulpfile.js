@@ -23,17 +23,17 @@ const paths = {
     root: './dist',
     styles: {
         src: 'src/scss/**/*.scss',
-        dest: 'dist/css'
+        dest: 'dist/css',
     },
 
     templates: {
         src: 'src/pug/**/*.pug',
-        dest: 'dist'
+        dest: 'dist',
     },
 
     scripts: {
         src: 'src/js/**/*.js',
-        dest: 'dist/js'
+        dest: 'dist/js',
     },
 
     images: {
@@ -81,7 +81,7 @@ function images() {
 }
 
  function svg() {
-   return gulp.src('./src/images/**/*.svg') 
+   return gulp.src('./src/images/**/*.svg')
         .pipe(gulp.dest('dist/images'))
 }
 

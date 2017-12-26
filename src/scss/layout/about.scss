@@ -171,9 +171,53 @@
     stroke-dasharray: 180 280;
 }
 
-.map__google{
-    width: 100%;
-   height: rem(860px);
-   background-color: grey;
-   position: relative;
+.map{
+    position: relative;
+
+    &__contacts{
+        width: rem(384px);
+        height: rem(314px);
+        background-color: rgba(252,252,252,0.85); 
+        position: absolute;
+        z-index: 2;
+        top: 39%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        flex-direction: column;
+
+        &-title{
+            @extend .works__title;
+        }
+
+    }
+
+    .contacts{
+
+        padding: 0 rem(50px);
+        
+        &__item{
+            display: flex;
+            margin-bottom: rem(30px);
+        }
+
+        &__svg{
+            width: rem(28px);
+            height: rem(25px);
+        }
+
+        &__link{
+            color: #687980;
+            padding-left: rem(14px);
+            font-family: 'robotobold';
+            font-size: rem(20px);
+        }
+    }
+
+    &__google{
+        width: 100%;
+       height: rem(860px);
+       background-color: grey;
+       position: relative;
+    }
 }
