@@ -1,4 +1,4 @@
-let authBtn = document.getElementById('auth-btn'),
+let authBtn = document.getElementById('authBtn'),
   welcomeBlock = document.querySelector('.welcome-block'),
   flipBlock = document.querySelector('.flip-block');
 

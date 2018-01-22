@@ -119,6 +119,7 @@ exports.images = images;
 exports.fonts = fonts;
 exports.clear = clear;
 exports.svg = svg;
+exports.scripts = scripts;
 
 
 

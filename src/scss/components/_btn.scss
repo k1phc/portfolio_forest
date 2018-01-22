@@ -6,4 +6,9 @@
     font-family: 'sansus_webissimoregular';
     font-size: rem(16px);
     cursor: pointer;
+    transition: .6s;
+
+    &:hover{
+        background-color: #4e8839;
+    }
 }

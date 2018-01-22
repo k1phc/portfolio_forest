@@ -12,9 +12,13 @@
         justify-content: space-between;
     }
 
+    &__socials{
+        margin-left: rem(20px);
+    }
+
     &__hamb{
         margin-right: rem(35px);
-        margin-top: rem(27px);
+        margin-top: rem(45px);
     }
 
     &__user{

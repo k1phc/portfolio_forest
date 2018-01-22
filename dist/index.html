@@ -11,93 +11,95 @@
     <link rel="stylesheet" href="css/main.min.css">
   </head>
   <body>
-    <div class="wrapper"></div>
-    <div class="welcome-bg">
-      <div class="welcome-auth">
-        <button class="auth-button" type="button" id="auth-btn">Авторизоваться</button>
-      </div>
-      <div class="welcome-block">
-        <div class="user">
-          <div class="user__img"><img class="user__img-pic" src="./images/cat.jpg" alt=""></div>
-          <div class="user__desc">
-            <div class="user__desc-name">Мистер Кот</div>
-            <div class="user__desc-data">Личный сайт веб разработчика     </div>
+    <div class="wrapper">
+      <div class="welcome-bg">
+        <div class="welcome-auth">
+          <button class="auth-button" type="button" id="authBtn">Авторизоваться</button>
+        </div>
+        <div class="welcome-block">
+          <div class="user">
+            <div class="user__img"><img class="user__img-pic" src="./images/cat.jpg" alt=""></div>
+            <div class="user__desc">
+              <div class="user__desc-name">Мистер Кот</div>
+              <div class="user__desc-data">Личный сайт веб разработчика     </div>
+            </div>
           </div>
+          <div class="socials">
+            <ul class="socials__list">
+              <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
+                  <svg class="socials__svg">
+                    <use xlink:href="./images/sprite.svg#vk"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--github" href="#">
+                  <svg class="socials__svg">
+                    <use xlink:href="./images/sprite.svg#github"></use>
+                  </svg></a></li>
+              <li class="socials__item"><a class="socials__link socials__link--in" href="#">
+                  <svg class="socials__svg">
+                    <use xlink:href="./images/sprite.svg#in"></use>
+                  </svg></a></li>
+            </ul>
+          </div>
+          <nav class="welcome-nav">
+            <ul class="welcome-nav__list">
+              <li class="welcome-nav__item"><a class="welcome-nav__link" href="works.html">Мои работы</a></li>
+              <li class="welcome-nav__item"><a class="welcome-nav__link" href="about.html">Обо мне</a></li>
+              <li class="welcome-nav__item"><a class="welcome-nav__link" href="blog.html">Блог</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="socials">
-          <ul class="socials__list">
-            <li class="socials__item"><a class="socials__link socials__link--vk" href="#">
-                <svg class="socials__svg">
-                  <use xlink:href="./images/sprite.svg#vk"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--github" href="#">
-                <svg class="socials__svg">
-                  <use xlink:href="./images/sprite.svg#github"></use>
-                </svg></a></li>
-            <li class="socials__item"><a class="socials__link socials__link--in" href="#">
-                <svg class="socials__svg">
-                  <use xlink:href="./images/sprite.svg#in"></use>
-                </svg></a></li>
-          </ul>
-        </div>
-        <nav class="welcome-nav">
-          <ul class="welcome-nav__list">
-            <li class="welcome-nav__item"><a class="welcome-nav__link" href="works.html">Мои работы</a></li>
-            <li class="welcome-nav__item"><a class="welcome-nav__link" href="about.html">Обо мне</a></li>
-            <li class="welcome-nav__item"><a class="welcome-nav__link" href="blog.html">Блог</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="flip-block">
-        <form class="auth-form" action="">
-          <h2 class="auth-form__title">Авторизуйтесь</h2>
-          <div class="auth-form__content">
-            <div class="auth-form__row">
-              <div class="auth-form__img">
-                <svg class="auth-form__svg">
-                  <use xlink:href="images/sprite.svg#login"></use>
-                </svg>
-              </div>
-              <input class="auth-form__input" placeholder="Логин" type="text" name="login">
-            </div>
-            <div class="auth-form__row">
-              <div class="auth-form__img">
-                <svg class="auth-form__svg">
-                  <use xlink:href="images/sprite.svg#password"></use>
-                </svg>
-              </div>
-              <input class="auth-form__input" placeholder="Пароль" type="password" name="password">
-            </div>
-            <div class="auth-form__row">
-              <label class="ishuman">
-                <input class="ishuman__input" type="checkbox">
-                <div class="ishuman__square">
-                  <svg class="ishuman__svg">
-                    <use xlink:href="images/sprite.svg#check"></use>
+        <div class="flip-block">
+          <form class="auth-form" action="">
+            <h2 class="auth-form__title">Авторизуйтесь</h2>
+            <div class="auth-form__content">
+              <div class="auth-form__row">
+                <div class="auth-form__img">
+                  <svg class="auth-form__svg">
+                    <use xlink:href="images/sprite.svg#login"></use>
                   </svg>
                 </div>
-                <div class="ishuman__title">Я человек</div>
-              </label>
+                <input class="auth-form__input" placeholder="Логин" type="text" name="login">
+              </div>
+              <div class="auth-form__row">
+                <div class="auth-form__img">
+                  <svg class="auth-form__svg">
+                    <use xlink:href="images/sprite.svg#password"></use>
+                  </svg>
+                </div>
+                <input class="auth-form__input" placeholder="Пароль" type="password" name="password">
+              </div>
+              <div class="auth-form__row">
+                <label class="ishuman">
+                  <input class="ishuman__input" type="checkbox">
+                  <div class="ishuman__square">
+                    <svg class="ishuman__svg">
+                      <use xlink:href="images/sprite.svg#check"></use>
+                    </svg>
+                  </div>
+                  <div class="ishuman__title">Я человек</div>
+                </label>
+              </div>
+              <div class="auth-form__row radio__row">
+                <div class="radio__title">Вы точно не робот?</div>
+                <label class="radio__label">
+                  <input class="radio__input" type="radio" name="ishuman">
+                  <div class="radio__circle"></div>
+                  <div class="radio__text">Да</div>
+                </label>
+                <label class="radio__label">
+                  <input class="radio__input" type="radio" name="ishuman">
+                  <div class="radio__circle"></div>
+                  <div class="radio__text">Не уверен</div>
+                </label>
+              </div>
+              <div class="auth-form__btns">
+                <button class="btn auth-btns"> На главную</button>
+                <button class="btn auth-btns">Войти </button>
+              </div>
             </div>
-            <div class="auth-form__row radio__row">
-              <div class="radio__title">Вы точно не робот?</div>
-              <label class="radio__label">
-                <input class="radio__input" type="radio" name="ishuman">
-                <div class="radio__circle"></div>
-                <div class="radio__text">Да</div>
-              </label>
-              <label class="radio__label">
-                <input class="radio__input" type="radio" name="ishuman">
-                <div class="radio__circle"></div>
-                <div class="radio__text">Не уверен</div>
-              </label>
-            </div>
-            <div class="auth-form__btns">
-              <button class="btn auth-btns"> На главную</button>
-              <button class="btn auth-btns">Войти  </button>
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
+        <footer class="welcome-footer"><span class="welcome-footer__text">&copy Мистер Кот | </span><span class="welcome-footer__text">создано с любовью в Loftschool | 2017</span></footer>
       </div>
     </div>
     <script src="js/bundle.js" defer></script>

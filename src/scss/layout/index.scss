@@ -16,6 +16,14 @@
     justify-content: center;
 }
 
+.Background {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
 .welcome-auth{
     position: absolute;
     top: rem(25px);
@@ -23,6 +31,7 @@
 }
 
 .welcome-block, .flip-block{
+    min-width: rem(430px);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -32,10 +41,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: rem(4px);
+    border-radius: rem(10px);
 
     @include mobile{
         height: rem(350px);
+        min-width: rem(350px);
     }
 
     &__disable{
@@ -46,38 +56,52 @@
 
 
 .welcome-nav{
+    width: 100%;
     
     &__list{
         display: flex;
+        
     
     }
 
     &__item{
         flex: auto;
+        height: rem(45px);
+        background-color: #608e54;
+        transition: .5s;
+
+        &:first-child{
+            border-bottom-left-radius: rem(10px);
+        }
+
+        &:last-child{
+            border-bottom-right-radius: rem(10px);
+        }
      
         &:last-child .welcome-nav__link{
             border-right: 0;
         }
-    }
-
-    &__link{
-        display: block;
-        padding: rem(14px) rem(33px);
-        background-color: #608e54;
-        color: #fff;
-        font-family: 'robotomedium';
-        text-align: center;
-        border-right: rem(1px) solid #a0b99e; 
-        transition: .5s;
-        font-size: rem(15px);
 
         &:hover{
             background-color: $green;
         }
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        color: #fff;
+        font-family: 'robotomedium';
+        border-right: rem(1px) solid #a0b99e; 
+        font-size: rem(15px);
+
+       
 
         @include mobile{
             padding: rem(10px) rem(30px);
-            font-size: rem(12px);
+            font-size: rem(14px);
         }
     }
 
@@ -248,6 +272,20 @@
         }
     }
     
+
+}
+
+.welcome-footer{
+    position: absolute;
+    bottom: rem(70px);
+    font-family: 'robotobold';
+
+    @include mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
 
 }
 

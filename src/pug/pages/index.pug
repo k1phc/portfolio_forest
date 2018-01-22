@@ -6,10 +6,13 @@ block variables
     
 
 block content    
-      .wrapper
+    .wrapper
       .welcome-bg
+        //- <div class="Background">
+        //-   <canvas class="Background-canvas"></canvas>
+        //- </div>
         .welcome-auth
-           button('type'= 'button').auth-button#auth-btn Авторизоваться
+           button('type'= 'button').auth-button#authBtn Авторизоваться
         .welcome-block
           include ../common/_user
           include ../common/_socials
@@ -47,6 +50,9 @@ block content
                   .radio__text Не уверен
               .auth-form__btns
                 button.btn.auth-btns  На главную
-                button.btn.auth-btns Войти  
+                button.btn.auth-btns Войти 
+        footer.welcome-footer
+          span.welcome-footer__text &copy Мистер Кот | 
+          span.welcome-footer__text создано с любовью в Loftschool | 2017
         
         
