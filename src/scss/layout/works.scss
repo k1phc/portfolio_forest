@@ -6,6 +6,10 @@
         height: rem(755px);
         display: flex;
 
+        @include mobile{
+            flex-direction: column;
+        }
+
         &__title{
             font-size: rem(56px);
             font-family: 'sansus_webissimoregular';
@@ -36,11 +40,19 @@
             justify-content: center;
             align-items: center;
             font-family: 'sansus_webissimoregular';
+
+            @include mobile{
+                width: 100%;
+            }
             
         }
         &__right{
             width: 50%;
             background-color: #e2e4d7;
+
+            @include mobile{
+                width: 100%;
+            }
         }
     }
 
@@ -121,6 +133,9 @@
     &__list{
         display: flex;
         justify-content: space-between;
+        @include mobile{
+            flex-direction: column;
+        }
     }
 
     &__item{
@@ -132,6 +147,11 @@
 
         &:last-child{
             margin-right: 0;
+        }
+
+        @include mobile{
+            margin-right: 0;
+            margin-bottom: rem(40px);
         }
 
     }
@@ -147,6 +167,14 @@
         color: #716f6a;
         padding-top: rem(23px);
         padding-bottom: rem(30px);
+
+
+        @include mobile{
+            padding-left: rem(14px);
+            padding-right: rem(14px);
+            padding-bottom: rem(20px);
+            line-height: rem(26px);
+        }
     }
 
     &__user{
@@ -158,6 +186,11 @@
     
         &-pos{
             color: #444a4e;
+
+            &:before{
+                content: "-";
+                padding-right: rem(4px);
+            }
         }
         
     }
@@ -170,6 +203,10 @@
         border-radius: rem(5px);
         margin-bottom: rem(300px);
         position: relative;
+
+        @include mobile{
+            width: rem(340px);
+        }
 
         &__blur{
             background: url(../images/works.png);
@@ -203,6 +240,10 @@
         &__row{
             width: rem(340px);
             margin-bottom: rem(20px);
+
+            @include mobile{
+                width: rem(280px);
+            }
         }
 
         &__input, &__area{
@@ -224,6 +265,11 @@
             }
             &--send{
                 border-right: rem(1px) solid #a0b99e; 
+                border-bottom-left-radius: rem(10px);
+            }
+
+            &--clear{
+                border-bottom-right-radius: rem(10px);
             }
         }
 

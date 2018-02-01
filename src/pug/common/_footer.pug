@@ -8,7 +8,8 @@ footer.footer
                     в Школе онлайн образования LoftSchool. 
         .footer__block
             +nav('footer-nav', [{href: 'works.html', text: 'Мои работы'}, {href: 'about.html', text: 'Обо мне'}, {href: 'blog.html', text:'Блог'}, {href: 'index.html', text:'Авторизоваться'}])
-            include _socials
+            .footer__social
+                include _socials
         .footer__block
             .footer__quote
                 blockquote.quote

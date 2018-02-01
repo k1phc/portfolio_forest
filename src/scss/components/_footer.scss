@@ -33,16 +33,34 @@
 
         @include mobile{
             width: 100%;
+            margin-bottom: rem(10px);
+            padding: 0 rem(16px);
+
+            &:after{
+                content: "";
+                border-bottom: rem(1px) solid grey;
+                width: 100%;
+                height: rem(2px);
+                display: block;
+                padding: rem(6px);
+                
+            }
         }
     }
 
     &__desc{
         line-height: rem(24px);
         padding-left: rem(24px);
+
+        @include mobile{
+            padding: 0 rem(30px);
+            text-align: center;
+        }
     }
 
     &-nav{
         width: 100%;
+
 
         &__list{
             display: flex;
@@ -57,8 +75,11 @@
         &__link{
             color: #fff;
         }
-
        
+    }
+
+    &__social{
+        margin: 0 auto;
     }
 
     &__quote{

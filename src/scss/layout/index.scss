@@ -28,6 +28,10 @@
     position: absolute;
     top: rem(25px);
     right: rem(100px);
+
+    @include mobile {
+        right: initial;
+    }
 }
 
 .welcome-block, .flip-block{
@@ -45,7 +49,7 @@
 
     @include mobile{
         height: rem(350px);
-        min-width: rem(350px);
+        min-width: rem(330px);
     }
 
     &__disable{
@@ -100,7 +104,6 @@
        
 
         @include mobile{
-            padding: rem(10px) rem(30px);
             font-size: rem(14px);
         }
     }
