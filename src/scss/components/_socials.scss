@@ -28,5 +28,10 @@
         width: rem(35px);
 		height: rem(25px);
 		transition: .5s;
+
+		@include tablets{
+			width: rem(40px);
+			height: rem(30px);
+		}
 	}
 }

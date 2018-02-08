@@ -12,6 +12,11 @@
         border-radius: 50%;
         overflow: hidden;
 
+        @include tablets{
+            width: rem(240px);
+            height: rem(240px);
+        }
+
         &-pic{
             max-width: 100%;
             height: auto;
@@ -28,11 +33,27 @@
         &-name{
             font-family: 'robotomedium';
             font-size: rem(28px);
+
+            @include tablets{
+                font-size: rem(32px);
+            }
+
+            @include mobile{
+                font-size: rem(24px);
+            }
         }
         &-data{
             font-family: 'robotoregular';
             color: #d0d4d3;
             font-size: rem(18px);
+
+            @include tablets{
+                font-size: rem(22px);
+            }
+
+            @include mobile{
+                font-size: rem(16px);
+            }
         }
         }
 }

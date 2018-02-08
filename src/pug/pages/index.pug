@@ -15,7 +15,8 @@ block content
            button('type'= 'button').auth-button#authBtn Авторизоваться
         .welcome-block
           include ../common/_user
-          include ../common/_socials
+          .welcome-social
+            include ../common/_socials
           +nav('welcome-nav', [{href: 'works.html', text: 'Мои работы'}, {href: 'about.html', text: 'Обо мне'}, {href: 'blog.html', text:'Блог'}])
         .flip-block
           form(action="" class='auth-form')
